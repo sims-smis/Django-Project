@@ -1,0 +1,5 @@
+#To start server
+python manage.py runserver
+
+#for tailwind: run following in other terminal
+python manage.py tailwind start 

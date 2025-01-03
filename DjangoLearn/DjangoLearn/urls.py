@@ -24,4 +24,8 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('erisapp/', include('erisapp.urls'),name='erisapp'),
+
+
+
+    path("__reload__/",include("django_browser_reload.urls")), # keep this path at the last of all other paths.
 ]
