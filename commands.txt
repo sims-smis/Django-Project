@@ -19,3 +19,6 @@ note: <username> is simran
 
 #To install pillow
 python -m pip install Pillow
+
+#To make migrations for a folder
+python manage.py makemigrations <folder_name>
