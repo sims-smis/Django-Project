@@ -12,3 +12,10 @@ python manage.py migrate
 
 #After running above migration command, to create a superuser
 python manage.py createsuperuser
+
+#To change password of superuser:
+python manage.py changepassword <username>
+note: <username> is simran
+
+#To install pillow
+python -m pip install Pillow
