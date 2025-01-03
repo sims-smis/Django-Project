@@ -1,5 +1,14 @@
+#To activate virtual environment
+source .venv/bin/activate
+
 #To start server
 python manage.py runserver
 
 #for tailwind: run following in other terminal
 python manage.py tailwind start 
+
+#Django Admin Migration
+python manage.py migrate
+
+#After running above migration command, to create a superuser
+python manage.py createsuperuser
