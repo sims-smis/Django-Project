@@ -7,5 +7,21 @@ Home Page
 {% block content %}
 <h1>Home Page</h1>
 <p>ALL CHAI FOR YOU</p>
-{% endblock  %}
 
+<div class='grid grid-cols-3 gap-4 m-4'>
+    {% for chai in chais%}
+        <div class=' bg-blue-900 p-5'>
+            <img class="rounded" src='{{chai.image.url}}' alt='{{chai.name}}'>
+        </div>
+        <a href="#">
+            <button
+                type = "button"
+                class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+                {{chai.type}} - {{chai.id}}
+            </button>
+        </a>
+    {% endfor %}
+</div>
+
+{% endblock  %}
