@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        {% block titleName %}defaultName{% endblock titleName %}
+    </title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    Hello, Django! This is a test page.
+    <nav>this is our navbar</nav>
+    {% block  content%}{% endblock  %}
 </body>
 </html>
